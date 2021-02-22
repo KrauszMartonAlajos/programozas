@@ -1,0 +1,42 @@
+body
+{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-family: 'Times New Roman';
+	color: #741B47;
+	padding-left: 5em;
+	padding-right: 5em;
+	background-image: url(hatter.jpg);
+}
+h1
+{
+	font-family: Verdana;
+	font-size:2em;
+	margin-bottom:0em;
+	text-align: center;
+}
+h2
+{				
+	text-align:center;
+	font-family: Verdana;
+	font-size:1.2em;
+	font-style: italic;
+	margin-top: 0em;
+	text-align: center;
+}
+h3
+{								
+	font-family: Verdana;
+	font-size:1.2em;
+	text-decoration:underline;
+	font-style: italic;	
+}
+form
+{
+text-align: center;
+margin: auto;
+}
+
+input {
+	width:60px;
+}
