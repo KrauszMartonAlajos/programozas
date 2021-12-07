@@ -1,20 +1,16 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
-    background-image: url(https://wallpaperaccess.com/full/1237377.jpg);
+    background-image: url(https://images.unsplash.com/photo-1502126829571-83575bb53030?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&w=1000&q=80);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
-  .cim{
+}
+h2{
     text-align: center;
     text-shadow: 2px 2px orange;
-  }
-  .fooldalkep{
-    float: left;
-  }
-  
-  .sidebar {
+}
+.sidebar {
     margin: 0;
     padding: 0;
     width: 200px;
@@ -22,34 +18,32 @@ body {
     position: fixed;
     height: 100%;
     overflow: auto;
-    
+
   }
-  .szöveg{
-      background-color: #A0522D;
-      text-align: center;
-      border:orange;
-      border-width:5px;
-      border-style:solid
-  }
-  
   .sidebar a {
     display: block;
     color: black;
     padding: 16px;
     text-decoration: none;
   }
-   
+
   .sidebar a.active {
     background-color: #04AA6D;
     color: white;
   }
-  
+
   .sidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
-  }
-  
-  div.content {
+  } 
+.szöveg_masodikoldal{
+    background-color: #A0522D;
+      text-align: center;
+      border:orange;
+      border-width:5px;
+      border-style:solid
+}
+div.content {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
@@ -57,21 +51,4 @@ body {
     text-align: center;
     width:800px;
     margin:0 auto;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
   }
