@@ -1,77 +1,105 @@
-body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    background-image: url(https://wallpaperaccess.com/full/1237377.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  .cim{
+td{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;    
     text-align: center;
-    text-shadow: 2px 2px orange;
-  }
-  .fooldalkep{
-    float: left;
-  }
-  
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #A0522D;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
     
-  }
-  .szöveg{
-      background-color: #A0522D;
-      text-align: center;
-      border:orange;
-      border-width:5px;
-      border-style:solid
-  }
-  
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-   
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-    width: 50%;
-    text-align: center;
-    width:800px;
-    margin:0 auto;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+}
+body{
+    background-color: whitesmoke;
+}   
+
+
+table{
+    background-image: url("data:image/jpeg;base64,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");
+}
+
+.kicsi{
+    width:150px;
+    height: 150px;
+}
+#jatekter{
+    float:left;
+
+
+}
+#adatok{
+    float: left;
+    font-size: larger;
+    height: 500px;
+    width: 500px;
+    font-family: "JetBrains Mono",monospace;
+}
+
+button{
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  background-image: url("marvany.jpg");
+}
+
+button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#ki_ertekeles{
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  background-image: url("marvany.jpg");
+}
+/* gomb-design forrása:
+https://getcssscan.com/css-buttons-examples */
